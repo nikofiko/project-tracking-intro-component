@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="overflow-hidden" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="">
+  <div class="w-1/2 h-1/2 bg-grayiest absolute top-0 -z-40 right-0 rounded-bl-[90px]"></div>
+  <header class="flex justify-between lg:px-52 px-8 pt-6 lg:pt-14">
+    <div class="">
+      <img src="/images/logo.svg" alt="">
+    </div>
+    <nav class="font-barc font-bold uppercase gap-12 hidden lg:flex deskop">
+      <h2 class="hover:underline cursor-pointer">Product</h2>
+      <h2 class="hover:underline cursor-pointer">Features</h2>
+      <h2 class="hover:underline cursor-pointer">Pricing</h2>
+      <div class="w-1 h-1 rounded-full bg-ball mt-2"></div>
+      <h2 class="hover:underline cursor-pointer text-ball">Login</h2>
+    </nav>
+    <nav class="hidden absolute font-barc font-bold uppercase gap-12 mobile bg-white top-20 z-40 shadow-custom">
+      <h2 class="hover:underline cursor-pointer text-center px-32 text-lg pt-5 pb-5">Product</h2>
+      <h2 class="hover:underline cursor-pointer text-center text-lg pb-5">Features</h2>
+      <h2 class="hover:underline cursor-pointer text-center text-lg pb-5">Pricing</h2>
+      <div class="px-6">
+        <hr>
+      </div>
+      <h2 class="hover:underline cursor-pointer text-ball text-center text-lg pt-5 pb-5">Login</h2>
+    </nav>
+    <div class="flex items-center lg:hidden hamburger-open">
+      <img src="/images/icon-hamburger.svg" alt="">
+    </div>
+    <div class="hidden items-center hamburger-close lg:hidden">
+      <img src="/images/icon-close.svg" alt="">
+    </div>
+  </header>
+  <main class="pt-12 lg:pt-40 lg:pl-52">
+    <div class="absolute lg:top-1/4 top-[120px] lg:-right-44 -right-10">
+      <img class="" src="/images/illustration-devices.svg" alt="">
+    </div>
+    <div class="lg:max-w-sm pt-80 lg:pt-0 pl-8 lg:pl-0">
+      <div class="flex gap-4 pb-4">
+        <div class="px-2.5 bg-black rounded-2xl">
+          <h3 class="font-barc uppercase font-bold text-white">New</h3>
+        </div>
+        <h3 class="font-barc uppercase text-ball tracking-widest">Monograph Dashboard</h3>
+      </div>
+      <h1 class="font-barc uppercase font-bold text-[40px] leading-10 lg:text-5xl">Powerful insights into your team</h1>
+      <div class="lg:max-w-64 max-w-72 pt-2 lg:pt-8 lg:pb-12 pb-6">
+        <p class="font-bar text-blue-gray font-medium text-lg lg:text-base">Project planning and time tracking for agile teams</p>
+      </div>
+      <div class="flex gap-5">
+        <button class="hover:bg-[#ff9999] py-2 px-7 rounded-md font-barc uppercase font-medium text-white bg-red-but">Schedule a demo</button>
+        <div class="flex flex-col justify-center">
+          <h3 class="font-barc uppercase text-ball tracking-widest text-sm lg:text-base">to see a live preview</h3>
+        </div>
+      </div>
+    </div>
+
+  </main>
+<script src="./script.js"></script>
+</body>
+</html>
